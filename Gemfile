@@ -27,12 +27,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'spring',        group: :development
 
 group :development, :test do 
-  gem 'rspec-rails', '~> 2.14.2'
+  gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'
   gem 'better_errors'
-end
-
-group :test do 
   gem 'capybara', '2.2.1'
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'shoulda-matchers'
@@ -42,6 +39,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
 gem 'pg', '0.16.0'
 gem 'react-rails', '~> 1.0'
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
