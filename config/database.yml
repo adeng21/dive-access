@@ -1,0 +1,18 @@
+development: &default
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: dive_access_dev
+  host: localhost
+  pool: 5
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: dive_access_test
+
+production:
+  <<: *default
+  database: dive_access_prod
