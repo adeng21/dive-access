@@ -5,7 +5,7 @@ var BackgroundImage = React.createClass({
         <div className="landing-page-statement">
           <h1>Ready for a Better Way to Plan Your Dive Vacation?</h1>
           <h3>Enter Your Email for Early Access Now!</h3>
-          <InputForm class_id="email-submit-form" url="/new_user"/>
+          <InputForm class_id="email-submit-form" url="new_user"/>
         </div>
       </div>
     ) 
