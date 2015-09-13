@@ -40,6 +40,7 @@ gem 'font-awesome-rails'
 gem 'pg', '0.16.0'
 gem 'react-rails', '~> 1.0'
 gem 'devise'
+gem 'simple_form'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

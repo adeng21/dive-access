@@ -1,0 +1,142 @@
+// Widths
+.width-25 {
+  width: 25%;
+}
+.width-30 {
+  width: 30%;
+}
+.width-33 {
+  width: 33.3333%;
+}
+.width-40 {
+  width: 40%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-70{
+  width: 70%;
+}
+.width-80{
+  width: 80%;
+}
+.width-100 {
+  width: 100%;
+}
+
+// Margin & Padding
+@mixin margin-vertical($margin-size) {
+  margin-top: $margin-size;
+  margin-bottom: $margin-size;
+}
+@mixin margin-horizontal($margin-size) {
+  margin-left: $margin-size;
+  margin-right: $margin-size;
+}
+@mixin margin-full($margin-size) {
+  margin: $margin-size !important;
+}
+//
+@mixin padding-vertical($padding-size) {
+  padding-top: $padding-size;
+  padding-bottom: $padding-size;
+}
+@mixin padding-horizontal($padding-size) {
+  padding-left: $padding-size;
+  padding-right: $padding-size;
+}
+@mixin padding-full($padding-size) {
+  padding: $padding-size;
+}
+@mixin padding-left($padding-size){
+  padding-left: $padding-size;
+}
+@mixin padding-right($padding-size){
+  padding-right: $padding-size;
+}
+//
+.no-margin {
+  @include margin-full(0);
+}
+
+.margin-vertical-xxs{
+  @include margin-vertical(0.30em);
+}
+.margin-vertical-xs {
+  @include margin-vertical(0.5em);
+}
+.margin-vertical-sm {
+  @include margin-vertical(0.75em);
+}
+.margin-vertical-med {
+  @include margin-vertical(1.25em);
+}
+.margin-vertical-lg {
+  @include margin-vertical(1.75em);
+}
+.margin-horizontal-xxs {
+  @include margin-horizontal(0.30em);
+}
+.margin-horizontal-xs {
+  @include margin-horizontal(0.5em);
+}
+.margin-horizontal-sm {
+  @include margin-horizontal(0.75em);
+}
+.margin-full-xs{
+  @include margin-full(0.25em);
+}
+.margin-full-sm {
+  @include margin-full(0.75em);
+}
+.margin-full-med {
+  @include margin-full(1.25em);
+}
+//
+.no-padding {
+  @include padding-full(0);
+}
+.no-padding-left{
+  @include padding-left(0);
+}
+.no-padding-right{
+ @include padding-right(0); 
+}
+.padding-vertical-xxs {
+  @include padding-vertical(0.30em);
+}
+.padding-vertical-xs {
+  @include padding-vertical(0.5em);
+}
+.padding-vertical-sm {
+  @include padding-vertical(0.75em);
+}
+.padding-vertical-med {
+  @include padding-vertical(1.25em);
+}
+.padding-vertical-lg {
+  @include padding-vertical(1.75em);
+}
+.padding-horizontal-xxs {
+  @include padding-horizontal(0.30em);
+}
+.padding-horizontal-xs {
+  @include padding-horizontal(0.5em);
+}
+.padding-horizontal-sm {
+  @include padding-horizontal(0.75em);
+}
+.padding-full-sm {
+  @include padding-full(0.75em);
+}
+.padding-full-med {
+  @include padding-full(1.25em);
+}
+
+.vertical-align{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

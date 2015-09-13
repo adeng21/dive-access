@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :diveshops
 
   devise_for :users
-  root to: 'home#index', as: 'home'
+  root 'home#index'
+  post 'new_user', to: 'home#new_user', as: 'new_user'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

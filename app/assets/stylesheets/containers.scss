@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  @extend .background-default;
+  @extend .dark-text;
+  font-family: $font-family;
+  min-height: 100%;
+}
+
+//Backgrounds
+.background-default {
+  background: $default-background;
+}
+
+@mixin gradient-image($image_url) {
+  background-image: linear-gradient(transparent, #000), image_url($image_url);
+}
+
+.image-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom:0;
+}
+
+.background-image {
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.coral-reef {
+    @include gradient-image('background_images/coral_reef.jpg');
+  }
+  &.ocean {
+    @include gradient-image('background_images/oceans.jpg');
+  }
+  &.whale-shark {
+    @include gradient-image('background_images/whale_shark.jpg');
+  }
+  &.barracuda {
+    @include gradient-image('background_images/barracudas.jpg');
+  }
+  &.jacks-ball {
+    @include gradient-image('background_images/jacks_ball.jpg');
+  }
+}
+
+//Containers
+.full {
+  height: 100%;
+  width: 100%;
+}
