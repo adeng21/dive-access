@@ -15,7 +15,7 @@ body {
 }
 
 @mixin gradient-image($image_url) {
-  background-image: linear-gradient(transparent, #000), image_url($image_url);
+  background-image: linear-gradient(transparent, #000), image-url($image_url);
 }
 
 .image-container {
