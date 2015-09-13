@@ -42,6 +42,7 @@ gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
 gem 'rails_12factor', group: :production
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
